@@ -82,10 +82,10 @@ nav ul li a.active {
    Hero Section
    ===================== */
 .hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
   padding: 4rem 2rem;
   background: linear-gradient(135deg, var(--light-sand) 0%, var(--cream) 100%);
   text-align: center;
@@ -98,6 +98,8 @@ nav ul li a.active {
   font-weight: 600;
   color: var(--dark-brown);
   line-height: 1.15;
+  text-align: center;
+  width: 100%;
 }
 
 .hero-text {
