@@ -89,7 +89,15 @@ nav ul li a.active {
   padding: 4rem 2rem;
   background: linear-gradient(135deg, var(--light-sand) 0%, var(--cream) 100%);
   text-align: center;
-  gap: 1.5rem;
+  gap: 1.2rem;
+}
+
+.hero h1 {
+  font-family: var(--font-display);
+  font-size: 3.8rem;
+  font-weight: 600;
+  color: var(--dark-brown);
+  line-height: 1.15;
 }
 
 .hero-text {
