@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects – Mahika Sharma</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="nav-logo">MS</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-header">
+    <h2>My Projects & Experience</h2>
+    <p class="page-subtitle">A mix of research, engineering, and things I built just because I was curious.</p>
+  </div>
+
+  <main>
+    <section class="projects-section">
+
+      <div class="project-card">
+        <img src="data-pipeline.jpg" alt="Data pipeline illustration" class="project-img" />
+        <div class="project-info">
+          <h3>Data Engineering @ Purple Carrot</h3>
+          <p>
+            During my co-op at Purple Carrot, I built and maintained Python-based data pipelines that powered
+            internal analytics. A major part of the role involved migrating legacy data systems to Snowflake,
+            which required careful schema design and data validation at every step. I also built Looker dashboards
+            that gave the business team visibility into metrics they'd never had before. It was my first real
+            taste of how data engineering sits at the core of every product decision a company makes — and how
+            much craft goes into making pipelines reliable, scalable, and actually usable by non-engineers.
+            The experience taught me a lot about documentation, stakeholder communication, and writing code
+            that your future self won't hate.
+          </p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="research.jpg" alt="Research illustration" class="project-img" />
+        <div class="project-info">
+          <h3>Scientific Research @ Academy of Sciences, Czech Republic</h3>
+          <p>
+            I spent time doing research at the Academy of Sciences of the Czech Republic, where I worked on
+            building data pipelines for scientific datasets. Working in an international research environment
+            was eye-opening — the pace is different from industry, the questions are longer-term, and the
+            datasets are often messier and more interesting. I got to apply a lot of the data engineering
+            skills I'd built in industry to a research context, which meant thinking carefully about
+            reproducibility, data provenance, and how to structure pipelines that scientists (not engineers)
+            would need to interact with. It deepened my interest in computational research as a career path.
+          </p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="ml.jpg" alt="Machine learning illustration" class="project-img" />
+        <div class="project-info">
+          <h3>Hate Speech Detection (NLP)</h3>
+          <p>
+            For my NLP course project, I'm building a hate speech detection system using the Davidson et al.
+            Twitter dataset. The project involves implementing and comparing multiple approaches: a baseline
+            Naive Bayes classifier, an LSTM model, and a fine-tuned BERT model. What makes this project
+            meaningful to me is the real-world complexity — hate speech datasets are noisy, labels are
+            contested, and models trained on them can easily encode existing biases. I'm thinking carefully
+            about evaluation beyond accuracy: false positive rates matter a lot when you're building systems
+            that could silence legitimate speech.
+          </p>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="skills-section">
+      <h3>Tools & Skills</h3>
+      <p>Here's a snapshot of what I work with regularly:</p>
+      <ul class="skills-list">
+        <li>Python (pandas, scikit-learn, PyTorch, NumPy)</li>
+        <li>Data Engineering: Snowflake, SQL, ETL pipelines</li>
+        <li>Machine Learning: regression, classification, neural networks</li>
+        <li>NLP: transformers, BERT, n-gram models, NER</li>
+        <li>Data Visualization: Altair, matplotlib, Looker, D3.js</li>
+        <li>Tools: Git, GitHub, Jupyter, VS Code</li>
+      </ul>
+    </section>
+
+    <section class="contact-section">
+      <h2>Get in Touch</h2>
+      <p>I'd love to connect! Reach out via any of the links below.</p>
+      <div class="contact-links">
+        <a href="/cdn-cgi/l/email-protection#2f5c474e5d424e01424e47466f41405d5b474a4e5c5b4a5d41014a4b5a">Email</a>
+        <a href="https://linkedin.com/in/mahikasharma" target="_blank">LinkedIn</a>
+        <a href="https://github.com/mahikasharma" target="_blank">GitHub</a>
+      </div>
+    </section>
+  </main>
+
