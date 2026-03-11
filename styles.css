@@ -39,7 +39,7 @@ body {
 nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 1.2rem 4rem;
   background-color: var(--white);
   border-bottom: 2px solid var(--warm-tan);
@@ -48,12 +48,9 @@ nav {
   z-index: 100;
 }
 
-.nav-logo {
-  font-family: var(--font-display);
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--terracotta);
-  letter-spacing: 0.05em;
+.hero-text.centered {
+  text-align: center;
+  width: 100%;
 }
 
 nav ul {
@@ -200,33 +197,29 @@ main {
 }
 
 .project-card {
-  display: flex;
-  gap: 2rem;
   background: var(--white);
   border-radius: 12px;
   padding: 1.8rem;
   border: 1px solid var(--warm-tan);
-  box-shadow: 0 4px 16px rgba(160, 82, 45, 0.07);
+  box-shadow: 0 4px 16px rgba(90, 138, 106, 0.07);
   transition: box-shadow 0.2s;
 }
 
 .project-card:hover {
-  box-shadow: 0 8px 28px rgba(160, 82, 45, 0.14);
-}
-
-.project-img {
-  width: 130px;
-  height: 130px;
-  object-fit: cover;
-  border-radius: 8px;
-  flex-shrink: 0;
-  background-color: var(--warm-tan);
+  box-shadow: 0 8px 28px rgba(90, 138, 106, 0.14);
 }
 
 .project-info h3 {
   font-family: var(--font-display);
   font-size: 1.3rem;
   color: var(--rust);
+  margin-bottom: 0.2rem;
+}
+
+.project-date {
+  font-size: 0.85rem;
+  color: var(--soft-brown);
+  font-style: italic;
   margin-bottom: 0.7rem;
 }
 
@@ -310,6 +303,64 @@ main {
 .contact-links a:hover {
   background: var(--rust);
   transform: translateY(-2px);
+}
+
+/* =====================
+   Experience Cards
+   ===================== */
+.experience-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.exp-card {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 1.8rem;
+  border: 1px solid var(--warm-tan);
+  box-shadow: 0 4px 16px rgba(90, 138, 106, 0.07);
+  transition: box-shadow 0.2s;
+}
+
+.exp-card:hover {
+  box-shadow: 0 8px 28px rgba(90, 138, 106, 0.14);
+}
+
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.exp-header h3 {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  color: var(--rust);
+  margin-bottom: 0.2rem;
+}
+
+.exp-org {
+  font-size: 0.9rem;
+  color: var(--soft-brown);
+  font-style: italic;
+}
+
+.exp-date {
+  font-size: 0.85rem;
+  color: var(--soft-brown);
+  white-space: nowrap;
+  padding: 0.3rem 0.8rem;
+  background: var(--light-sand);
+  border-radius: 12px;
+}
+
+.exp-card p {
+  font-size: 0.97rem;
+  color: var(--dark-brown);
+  line-height: 1.75;
 }
 
 /* =====================
